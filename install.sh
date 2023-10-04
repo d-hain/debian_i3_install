@@ -51,7 +51,7 @@ sudo apt install \
     mypaint \
     fonts-jetbrains-mono fonts-font-awesome \
     lolcat sl \
-    grim
+    grim xclip slurp
 
 
 # Installing Discord
