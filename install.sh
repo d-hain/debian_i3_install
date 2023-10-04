@@ -56,7 +56,7 @@ sudo apt install \
 
 # Installing wallutils
 sudo apt install \
-    git golang imagemagick \
+    golang imagemagick \
     libx11-dev libxcursor-dev libxmu-dev libwayland-dev \
     libxpm-dev xbitmaps libxmu-headers libheif-dev make
 git clone https://github.com/xyproto/wallutils
