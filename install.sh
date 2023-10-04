@@ -50,9 +50,20 @@ sudo apt install \
     nautilus filezilla libreoffice \
     mypaint \
     fonts-jetbrains-mono fonts-font-awesome \
-    lolcat sl \
+    lolcat sl git \
     grim xclip slurp
 
+
+# Installing wallutils
+sudo apt install \
+    git golang imagemagick \
+    libx11-dev libxcursor-dev libxmu-dev libwayland-dev \
+    libxpm-dev xbitmaps libxmu-headers libheif-dev make
+git clone https://github.com/xyproto/wallutils
+cd wallutils
+make
+sudo make PREFIX=/usr/local install
+cd ..
 
 # Installing Discord
 sudo curl "https://dl-canary.discordapp.net/apps/linux/0.0.169/discord-canary-0.0.169.deb" --output discord.deb
@@ -82,7 +93,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions $zshcustom/plugins/zs
 git clone https://github.com/zsh-users/zsh-syntax-highlighting $zshcustom/plugins/zsh-syntax-highlighting
 
 # Installing packer (nvim package manager)
-git clone --depth 1 https://github.com/wbthomason/packer.nvim $homedir/.local/share/nvim/site/pack/packer/start/packer.nvim
+git clone --depth 1 git@d-hain:wbthomason/packer.nvim $homedir/.local/share/nvim/site/pack/packer/start/packer.nvim
 
 
 # Configure git
