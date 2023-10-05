@@ -48,7 +48,7 @@ sudo apt install \
     exa btop bat ripgrep \
     brightnessctl pavucontrol bluez blueman pamixer \
     nautilus filezilla libreoffice \
-    mypaint \
+    gimp \
     fonts-jetbrains-mono fonts-font-awesome \
     lolcat sl feh \
     git gh \
