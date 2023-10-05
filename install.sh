@@ -46,7 +46,7 @@ sudo apt install \
     virt-manager \
     neofetch imv \
     exa btop bat ripgrep \
-    brightnessctl pavucontrol bluez pamixer \
+    brightnessctl pavucontrol bluez blueman pamixer \
     nautilus filezilla libreoffice \
     mypaint \
     fonts-jetbrains-mono fonts-font-awesome \
