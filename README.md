@@ -15,5 +15,10 @@ su USERNAME
 sudo apt install git
 ```
 3. Setup ssh on the machine (used for cloning packer (nvim package manager))
-4. Clone this repo and run the shell script.
+4. Maybe do a system upgrade or something idk.
+```shell
+sudo apt update
+sudo apt upgrade
+```
+6. Clone this repo and run the shell script.
 
