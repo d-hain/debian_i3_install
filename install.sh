@@ -115,10 +115,10 @@ git clone --recurse-submodules https://github.com/d-hain/dotfiles
 workdir=$(pwd)
 
 # .config
-sudo mv $workdir/dotfiles/.config/alacritty   $homedir/.config/alacritty
-sudo mv $workdir/dotfiles/.config/nvim        $homedir/.config/nvim
-sudo mv $workdir/dotfiles/.config/i3        $homedir/.config/i3
-sudo mv $workdir/dotfiles/.config/i3status        $homedir/.config/i3status
+sudo mv $workdir/dotfiles/.config/alacritty   $homedir/.config/
+sudo mv $workdir/dotfiles/.config/nvim        $homedir/.config/
+sudo mv $workdir/dotfiles/.config/i3        $homedir/.config/
+sudo mv $workdir/dotfiles/.config/i3status        $homedir/.config/
 
 sudo mv $workdir/dotfiles/.vimrc              $homedir/
 sudo mv $workdir/dotfiles/.ideavimrc          $homedir/
