@@ -52,7 +52,7 @@ sudo apt install \
     fonts-jetbrains-mono fonts-font-awesome \
     lolcat sl feh \
     git gh \
-    grim xclip slurp
+    maim xclip
 
 
 # Installing wallutils
