@@ -2,7 +2,6 @@
 
 ## Things I install that are not in the install script
 
-- [WhatPulse](https://whatpulse.org/downloads/)
 - [Synology Drive Client](https://www.synology.com/en-id/support/download)
 
 ## Installing
