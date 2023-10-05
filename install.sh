@@ -85,6 +85,10 @@ cd /usr/bin/
 sudo tar -xzf $postmanfiledir/postman.tar.gz
 cd $postmanfiledir
 
+# Installing Obsidian
+wget -cO obsidian.deb "https://github.com/obsidianmd/obsidian-releases/releases/download/v1.4.14/obsidian_1.4.14_amd64.deb"
+sudo apt install ./obsidian.deb
+
 # Installing Oh My Zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
