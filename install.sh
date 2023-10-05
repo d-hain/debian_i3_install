@@ -73,24 +73,25 @@ sudo apt install ./discord.deb
 # Installing JetBrains Toolbox
 jetbrainsfiledir=$(pwd)
 wget -cO jetbrains-toolbox.tar.gz "https://data.services.jetbrains.com/products/download?platform=linux&code=TBA"
-cd /usr/bin/
+cd /usr/local/bin/
 sudo tar -xzf $jetbrainsfiledir/jetbrains-toolbox.tar.gz
-sudo mv jetbrains-toolbox-* jetbrains-toolbox
+sudo mv jetbrains-toolbox-* JetBrains-Toolbox
+sudo ln -s JetBrains-Toolbox/jetbrains-toolbox jetbrains-toolbox
 cd $jetbrainsfiledir
 
 # Installing Postman
 postmanfiledir=$(pwd)
 wget -cO postman.tar.gz "https://dl.pstmn.io/download/latest/linux_64"
-cd /usr/bin/
+cd /usr/local/bin/
 sudo tar -xzf $postmanfiledir/postman.tar.gz
+sudo rm -rf Postman/Postman
+sudo ln -s Postman/app/Postman postman
 cd $postmanfiledir
 
-# Installing WHatPulse
+# Installing WhatPulse
 whatpulsefiledir=$(pwd)
 wget -cO whatpulse.appimage "https://whatpulse.org/downloads/419"
-cd /usr/bin
-sudo mkdir WhatPulse
-cd WhatPulse
+cd /usr/local/bin
 sudo mv $whatpulsefiledir/whatpulse.appimage .
 chmod +x whatpulse.appimage
 cd $whatpulsefiledir
