@@ -85,6 +85,16 @@ cd /usr/bin/
 sudo tar -xzf $postmanfiledir/postman.tar.gz
 cd $postmanfiledir
 
+# Installing WHatPulse
+whatpulsefiledir=$(pwd)
+wget -cO whatpulse.appimage "https://whatpulse.org/downloads/419"
+cd /usr/bin
+sudo mkdir WhatPulse
+cd WhatPulse
+sudo mv $whatpulsefiledir/whatpulse.appimage .
+chmod +x whatpulse.appimage
+cd $whatpulsefiledir
+
 # Installing Obsidian
 wget -cO obsidian.deb "https://github.com/obsidianmd/obsidian-releases/releases/download/v1.4.14/obsidian_1.4.14_amd64.deb"
 sudo apt install ./obsidian.deb
