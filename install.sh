@@ -50,7 +50,7 @@ sudo apt install \
     nautilus filezilla libreoffice \
     mypaint \
     fonts-jetbrains-mono fonts-font-awesome \
-    lolcat sl git \
+    lolcat sl git gh \
     grim xclip slurp
 
 
