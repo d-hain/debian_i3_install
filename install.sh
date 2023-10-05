@@ -103,11 +103,9 @@ cd $whatpulsefiledir
 wget -cO obsidian.deb "https://github.com/obsidianmd/obsidian-releases/releases/download/v1.4.14/obsidian_1.4.14_amd64.deb"
 sudo apt install ./obsidian.deb
 
-# Installing Oh My Zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
 # Installing ohmyzsh plugins
 zshcustom=$HOME/.oh-my-zsh/custom
+sudo mkdir -p $zshcustom/
 git clone https://github.com/zsh-users/zsh-autosuggestions $zshcustom/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting $zshcustom/plugins/zsh-syntax-highlighting
 
@@ -116,16 +114,10 @@ git clone --depth 1 git@d-hain:wbthomason/packer.nvim $homedir/.local/share/nvim
 
 
 # Configure git
-echo "Configure git name and email? (y/n)"
-read conf_git
-
-if [[ $conf_git -eq "y" ]]; then
-	git config --global user.name "David Hain"
-	git config --global user.email "d.hain@gmx.at"
-
-	echo "git config done."
-fi
-
+echo "Configuring git name and email."
+git config --global user.name "David Hain"
+git config --global user.email "d.hain@gmx.at"
+echo "git config done."
 
 # Copying config files from https://github.com/d-hain/dotfiles
 git clone --recurse-submodules https://github.com/d-hain/dotfiles
@@ -144,6 +136,7 @@ sudo mv $workdir/dotfiles/.zshrc              $homedir/
 sudo mv $workdir/dotfiles/.zsh_profile        $homedir/
 
 
-# Sexy ending
-clear
-neofetch
+# Installing Oh My Zsh
+# This has to be done as the last one as it changes to zsh after installing
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
