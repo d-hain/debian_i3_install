@@ -27,9 +27,6 @@ echo "Press any button to install..."
 read _button
 
 
-# Update system with apt
-sudo apt update && apt upgrade
-
 # Installing curl
 sudo apt install curl
 
