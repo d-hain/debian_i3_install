@@ -100,21 +100,14 @@ cd $whatpulsefiledir
 wget -cO obsidian.deb "https://github.com/obsidianmd/obsidian-releases/releases/download/v1.4.14/obsidian_1.4.14_amd64.deb"
 sudo apt install ./obsidian.deb
 
-# Installing ohmyzsh plugins
-zshcustom=$HOME/.oh-my-zsh/custom
-sudo mkdir -p $zshcustom/
-git clone https://github.com/zsh-users/zsh-autosuggestions $zshcustom/plugins/zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-syntax-highlighting $zshcustom/plugins/zsh-syntax-highlighting
-
-# Installing packer (nvim package manager)
-git clone --depth 1 git@d-hain:wbthomason/packer.nvim $homedir/.local/share/nvim/site/pack/packer/start/packer.nvim
-
-
 # Configure git
 echo "Configuring git name and email."
 git config --global user.name "David Hain"
 git config --global user.email "d.hain@gmx.at"
 echo "git config done."
+
+# Installing packer (nvim package manager)
+git clone --depth 1 git@d-hain:wbthomason/packer.nvim $homedir/.local/share/nvim/site/pack/packer/start/packer.nvim
 
 # Copying config files from https://github.com/d-hain/dotfiles
 git clone --recurse-submodules https://github.com/d-hain/dotfiles
