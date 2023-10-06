@@ -40,7 +40,7 @@ sudo apt install \
     brave-browser \
     rust-all \
     zsh alacritty \
-    vim neovim \
+    vim \
     i3 i3lock \
     docker docker-compose \
     virt-manager \
@@ -107,7 +107,7 @@ git config --global user.email "d.hain@gmx.at"
 echo "git config done."
 
 # Installing packer (nvim package manager)
-git clone --depth 1 git@d-hain:wbthomason/packer.nvim $homedir/.local/share/nvim/site/pack/packer/start/packer.nvim
+git clone --depth 1 https://github.com/wbthomason/packer.nvim $homedir/.local/share/nvim/site/pack/packer/start/packer.nvim
 
 # Copying config files from https://github.com/d-hain/dotfiles
 git clone --recurse-submodules https://github.com/d-hain/dotfiles
