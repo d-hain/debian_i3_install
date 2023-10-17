@@ -104,6 +104,7 @@ sudo apt install ./obsidian.deb
 echo "Configuring git name and email."
 git config --global user.name "David Hain"
 git config --global user.email "d.hain@gmx.at"
+git config --global core.editor "nvim"
 echo "git config done."
 
 # Installing packer (nvim package manager)
