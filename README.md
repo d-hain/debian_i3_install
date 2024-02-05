@@ -1,5 +1,7 @@
 # Debian install with i3wm
 
+# VERY OUTDATED - DOES NOT WORK AT ALL
+
 ## Things I install that are not in the install script
 
 - [Synology Drive Client](https://www.synology.com/en-id/support/download)
